@@ -1,4 +1,11 @@
 ---
+- name: copy docker-credential-ecr-login to /usr/bin
+  copy:
+    remote_src: yes
+    src: /root/go/bin/docker-credential-ecr-login
+    dest: /usr/bin/docker-credential-ecr-login
+    mode: 0755
+  become: yes
 
 - name: check if config file exists
   stat:
