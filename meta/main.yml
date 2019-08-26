@@ -6,10 +6,10 @@ galaxy_info:
   min_ansible_version: 2
   galaxy_tags: []
 
-dependencies:
-  - role: fubarhouse.golang
-    become: yes
-    vars:
-      go_get:
-        - name: docker-credential-ecr-login
-          url: github.com/awslabs/amazon-ecr-credential-helper/ecr-login/cli/docker-credential-ecr-login
+#dependencies:
+#  - role: fubarhouse.golang
+#    become: yes
+#    vars:
+#      go_get:
+#        - name: docker-credential-ecr-login
+#          url: github.com/awslabs/amazon-ecr-credential-helper/ecr-login/cli/docker-credential-ecr-login
